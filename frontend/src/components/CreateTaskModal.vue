@@ -103,7 +103,7 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 35px;
   width: 100%;
 }
 .form_header {
@@ -119,7 +119,7 @@ export default {
 }
 .form_group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 75%;
 }
 .form_button {
