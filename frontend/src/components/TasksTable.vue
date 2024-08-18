@@ -36,7 +36,7 @@
           <td v-if="isEditing === task.id">
             <input type="date" v-model="task.dueDate" />
           </td>
-          <td v-else>{{ task.dueDate }}</td>
+          <td v-else>{{ task.dueDate.split("T")[0] }}</td>
 
           <td>
             {{
@@ -99,7 +99,6 @@ export default defineComponent({
   methods: {
     getTasks(): void {
       TasksService.getTasks().then((response: { data: TaskModel[] }) => {
-        console.log(response);
         this.tasks = response.data;
       });
     },
