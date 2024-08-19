@@ -38,7 +38,7 @@
 <script lang="ts">
 import { X } from "lucide-vue-next";
 import { defineComponent } from "vue";
-  
+
 import TasksService from "../services/TasksService";
 
 export default defineComponent({
