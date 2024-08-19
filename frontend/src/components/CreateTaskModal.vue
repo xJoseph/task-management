@@ -37,9 +37,11 @@
 
 <script lang="ts">
 import { X } from "lucide-vue-next";
+import { defineComponent } from "vue";
+  
 import TasksService from "../services/TasksService";
 
-export default {
+export default defineComponent({
   name: "CreateTaskModal",
   components: {
     X,
@@ -73,7 +75,7 @@ export default {
       this.$emit("update:isCreatingTask", false);
     },
   },
-};
+});
 </script>
 
 <style scoped>
